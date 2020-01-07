@@ -22,4 +22,22 @@ class Player {
 
 		return tokenArray;
 	}
+
+	/**
+	 * Gets all tokens that have not been dropped
+	 * @returns {Array} Array of unused tokens
+	 */
+
+	get unusedTokens() {
+		return this.tokens.filter(token => token.active === false);
+	}
+
+	/**
+	 * Gets the active token by returning the first token in the array of unused tokens
+	 * @returns {Object} First token object in the array of unused tokens
+	 */
+
+	get activeToken() {
+		return this.unusedTokens[0];
+	}
 }
