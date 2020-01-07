@@ -20,9 +20,13 @@ class Game {
 	}
 
 	/**
-	 * Begins the game
+	 * Initializes the game
 	 */
-	startGame() {}
+	startGame() {
+		this.board.drawHTMLBoard();
+		this.activePlayer.activeToken.drawHTMLToken();
+		this.ready = true;
+	}
 
 	/**
 	 * Gets the active player

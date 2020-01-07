@@ -18,8 +18,12 @@ class Space {
 		);
 
 		svgSpace.setAttributeNS(null, 'id', this.id);
-		svgSpace.setAttributeNS(null, 'cx', this.x * this.diameter + this.radius);
-		svgSpace.setAttributeNS(null, 'cy', this.y * this.diameter + this.radius);
+		svgSpace.setAttributeNS(null, 'cx', this.row * this.diameter + this.radius);
+		svgSpace.setAttributeNS(
+			null,
+			'cy',
+			this.column * this.diameter + this.radius
+		);
 		svgSpace.setAttributeNS(null, 'r', this.radius - 8);
 		svgSpace.setAttributeNS(null, 'fill', 'black');
 		svgSpace.setAttributeNS(null, 'stroke', 'none');
