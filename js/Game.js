@@ -18,4 +18,9 @@ class Game {
 		];
 		return playerArray;
 	}
+
+	/**
+	 * Begins the game
+	 */
+	startGame() {}
 }
