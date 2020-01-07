@@ -15,10 +15,12 @@ class Board {
 		const spaceArray = [];
 
 		for (let i = 0; i < this.rows; i++) {
+			const column = [];
 			for (let j = 0; j < this.columns; j++) {
-				let space = new Space(i, j);
-				spaceArray.push(space);
+				const space = new Space(i, j);
+				column.push(space);
 			}
+			spaceArray.push(column);
 		}
 
 		return spaceArray;
