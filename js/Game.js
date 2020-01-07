@@ -29,6 +29,6 @@ class Game {
 	 * @returns {Object} The active player
 	 */
 	get activePlayer() {
-		return this.players.find(player => player.active === true);
+		return this.players.find(player => player.active);
 	}
 }
