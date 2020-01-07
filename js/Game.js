@@ -23,4 +23,12 @@ class Game {
 	 * Begins the game
 	 */
 	startGame() {}
+
+	/**
+	 * Gets the active player
+	 * @returns {Object} The active player
+	 */
+	get activePlayer() {
+		return this.players.find(player => player.active === true);
+	}
 }
