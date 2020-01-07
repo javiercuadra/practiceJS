@@ -6,18 +6,16 @@ class Board {
 	}
 
 	/**
-	 * Creates all the spaces on the board
+	 * Creates a 2D Array of all the spaces on the board
 	 *
-	 * @param   {integer}   rows number of rows on the board
-	 * @param   {integer}   columns number of columns on the board
 	 * @returns {Array}     An array of all the spaces on the board
 	 */
 
-	createSpaces(rows, columns) {
+	createSpaces() {
 		const spaceArray = [];
 
-		for (let i = 0; i < rows; i++) {
-			for (let j = 0; j < columns; j++) {
+		for (let i = 0; i < this.rows; i++) {
+			for (let j = 0; j < this.columns; j++) {
 				let space = new Space(i, j);
 				spaceArray.push(space);
 			}
