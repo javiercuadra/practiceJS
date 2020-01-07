@@ -16,7 +16,7 @@ class Player {
 		const tokenArray = [];
 
 		for (let i = 0; i < num; i++) {
-			let token = Token(this, i);
+			let token = new Token(this, i);
 			tokenArray.push(token);
 		}
 
