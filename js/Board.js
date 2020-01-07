@@ -25,4 +25,15 @@ class Board {
 
 		return spaceArray;
 	}
+
+	/**
+	 * Renders the board object using HTML
+	 */
+	drawHTMLBoard() {
+		for (let column in this.spaces) {
+			for (let space in column) {
+				space.drawSVGSpace();
+			}
+		}
+	}
 }
