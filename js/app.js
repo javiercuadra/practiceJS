@@ -8,8 +8,6 @@ document.getElementById('begin-game').addEventListener('click', function() {
 	this.style.display = 'none';
 	document.getElementById('play-area').style.opacity = '1';
 });
-<<<<<<< HEAD
-=======
 
 /**
  * Listens for keyboard presses
@@ -17,4 +15,3 @@ document.getElementById('begin-game').addEventListener('click', function() {
 document.addEventListener('keydown', function(event) {
 	game.handleKeydown(event);
 });
->>>>>>> a8bebc9dc9740fe0ea54d66349b1179f84d19547
