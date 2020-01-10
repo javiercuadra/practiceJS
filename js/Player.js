@@ -38,6 +38,18 @@ class Player {
 	 */
 
 	get activeToken() {
+		console.log(this.unusedTokens);
 		return this.unusedTokens[0];
+	}
+
+	/**
+	 * Check if a player has any undropped tokens left
+	 * @return {Boolean}
+	 */
+	checkTokens() {
+		if (this.unusedTokens.length !== 0) {
+			return true;
+		}
+		return false;
 	}
 }
